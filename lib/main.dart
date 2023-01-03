@@ -24,6 +24,13 @@ class IDCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/thumb.jpg'),
+                radius: 40.0,
+              ),
+            ),
+            Divider(height: 60.0, color: Colors.grey[800]),
             const Text(
               'NAME',
               style: TextStyle(color: Colors.grey, letterSpacing: 2.0),
@@ -64,8 +71,7 @@ class IDCard extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.grey[400],
                       fontSize: 18.0,
-                      letterSpacing: 1.0
-                  ),
+                      letterSpacing: 1.0),
                 )
               ],
             )
